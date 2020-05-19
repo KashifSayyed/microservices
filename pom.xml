@@ -20,7 +20,7 @@
 	<name>Micro Services</name>
 	<description>Applications for learning and POC for Micro Services</description>
 	<modules>
-		<module>springboot-microservice</module>
+		<module>employee-service</module>
 	</modules>
 
 </project>
