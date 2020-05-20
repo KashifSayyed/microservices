@@ -5,7 +5,6 @@ package org.kashif.trainings.employeeservice.app;
 
 
 import java.util.Collection;
-import java.util.logging.Logger;
 
 import org.kashif.trainings.employeeservice.model.Employee;
 import org.kashif.trainings.employeeservice.service.EmployeeService;
@@ -13,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,9 +26,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @ComponentScan(basePackages = "org.kashif.trainings.employeeservice")
+@EnableDiscoveryClient
 public class EmployeeServiceApplication implements CommandLineRunner {
 	
-	private static final Logger logger = Logger.getLogger("EmployeeServiceApplication");
+	//private static final Logger logger = Logger.getLogger("EmployeeServiceApplication");
 	
 	@Autowired
 	private EmployeeService employeeService;
@@ -43,7 +44,7 @@ public class EmployeeServiceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info("EmployeeServiceApplication Started");
+		//logger.info("EmployeeServiceApplication Started");
 		
 	}
 

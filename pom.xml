@@ -21,6 +21,7 @@
 	<description>Applications for learning and POC for Micro Services</description>
 	<modules>
 		<module>employee-service</module>
+		<module>emp-eureka-server</module>
 	</modules>
 
 </project>
